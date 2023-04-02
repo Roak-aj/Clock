@@ -15,23 +15,26 @@
 		<div class="shorthand"><div class="hide-part clr3"></div></div>
 	</div>
 	<svg>
-  	<filter id="displacementFilter">
-    <feTurbulence
-      type="turbulence"
-      baseFrequency="0.05"
-      numOctaves="2"
-      result="turbulence">
-      	<animate
-      attributeName="baseFrequency"
-      values="0.05; 0.07; 0.1; 0.07; 0.05"
-      dur="10s"
-      repeatCount="indefinite" />
-    </feTurbulence>
-    <feDisplacementMap
-      in="SourceGraphic"
-      scale="5"/>
-  </filter>
-</svg>
+  		<filter id="displacementFilter">
+    			<feTurbulence
+      			type="turbulence"
+      			baseFrequency="0.05"
+      			numOctaves="2"
+      			result="turbulence">
+				
+      			<animate
+      			attributeName="baseFrequency"
+      			values="0.05; 0.07; 0.1; 0.07; 0.05"
+      			dur="10s"
+      			repeatCount="indefinite" />
+				
+   			</feTurbulence>
+			
+    			<feDisplacementMap
+      			in="SourceGraphic"
+      			scale="5"/>
+  		</filter>
+	</svg>
 
 </body>
 </html>
