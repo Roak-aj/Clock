@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="clock.css">
+	<title></title>
+	<script type="text/javascript" src="clock.js" defer></script>
+</head>
+<body>
+	<div class="clock">
+		<div id="Day-Night"></div>
+		<div class="bighand"><div class="hide-part clr"></div></div>
+		<div class="middlehand"><div class="hide-part clr2"></div></div>
+		<div class="shorthand"><div class="hide-part clr3"></div></div>
+	</div>
+	<svg>
+  	<filter id="displacementFilter">
+    <feTurbulence
+      type="turbulence"
+      baseFrequency="0.05"
+      numOctaves="2"
+      result="turbulence">
+      	<animate
+      attributeName="baseFrequency"
+      values="0.05; 0.07; 0.1; 0.07; 0.05"
+      dur="10s"
+      repeatCount="indefinite" />
+    </feTurbulence>
+    <feDisplacementMap
+      in="SourceGraphic"
+      scale="5"/>
+  </filter>
+</svg>
+
+</body>
+</html>

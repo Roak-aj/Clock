@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#Day-Night{
+	position: absolute;
+	bottom: 0;
+	margin-block: 2rem;
+	font-family: sans-serif;
+	font-size: 0.8rem;
+	font-weight: 700;
+	color: red;
+}
+
+.clock{
+	position: relative;
+	height: 400px;
+	width: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: black;
+	border: 5px solid green;
+	filter: url(#displacementFilter);
+}
+svg{
+	position: absolute;
+}
+.bighand{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	height: 280px;
+	width: 20px;
+	border-radius: 1rem;
+	z-index: 3;
+}
+
+.middlehand{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	height: 220px;
+	width: 20px;
+	border-radius: 1rem;
+	z-index: 2;
+}
+
+.shorthand{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	height: 180px;
+	width: 20px;
+	border-radius: 1rem;
+	z-index: 1;
+}
+.hide-part{
+	height: 50%;
+	width: 100%;
+	border-radius: 1rem;
+}
+.clr{
+	border: 5px solid white;
+}
+.clr2{
+	border: 5px solid greenyellow;
+}
+.clr3{
+	background-color: mediumvioletred;
+}
+
+@media only screen and (max-width: 600px){
+	.clock{
+		height: 200px;
+		width: 200px;
+	}
+	.bighand{
+		height: 180px;
+		width: 20px;
+	}
+	.middlehand{
+		height: 140px;
+		width: 20px;
+	}
+	.shorthand{
+		height: 100px;
+		width: 20px;
+	}
+}
