@@ -30,7 +30,4 @@ function currentTime(){
 	setTimeout(currentTime, 1000)
 }
 currentTime()
-// root.style.setProperty("--rotate-Angle-Short", String(Number(shortHandAngle)+360)+'deg')
-// root.style.setProperty("--rotate-Angle-Middle", String(Number(middleHandAngle)+360)+'deg')
-// root.style.setProperty("--rotate-Angle-Big",  String(Number(bigHandAngle)+360)+'deg')
 
